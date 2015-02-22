@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES := \
 
 PRODUCT_PACKAGES += \
     camera.flo \
+    DSPManager \
+    audio_effects.conf \
+    libcyanogen-dsp \
+    Eleven \
     Launcher3
 
 # NFC
