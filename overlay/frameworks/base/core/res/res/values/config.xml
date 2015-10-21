@@ -251,4 +251,36 @@
         <item>com.google.android.gms</item>
     </string-array>
 
+    <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
+         on the current state of the device.
+         Each item must be one of the following strings:
+         "power" = Power off
+         "reboot" = Add an option to reboot the device
+         "screenshot" = Take screenshot
+         "lockdown" = Add an action that locks the phone and enforces that it can't be unlocked without entering a credential
+         "settings" = An action to launch settings
+         "airplane" = Airplane mode toggle
+         "silent" = silent mode
+         "users" = list of users
+         -->
+    <string-array translatable="false" name="config_globalActionsList">
+        <item>power</item>
+        <item>reboot</item>
+        <item>screenshot</item>
+        <item>users</item>
+ </string-array>
+
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
 </resources>
